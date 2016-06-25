@@ -9,6 +9,7 @@ RUN DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/puppetlabs-release-pc1-trusty.de
 RUN apt-get update
 #RUN DEBIAN_FRONTEND=noninteractive apt-get -y install postgresql-9.3-postgis-2.1 puppet-agent
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install puppet
+RUN DEBIAN_FRONTEND=noninteractive gem install r10k
 
 # Add image configuration and scripts
 
