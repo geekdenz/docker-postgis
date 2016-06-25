@@ -8,7 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive wget https://apt.puppetlabs.com/puppetlabs-re
 RUN DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/puppetlabs-release-pc1-trusty.deb
 RUN apt-get update
 #RUN DEBIAN_FRONTEND=noninteractive apt-get -y install postgresql-9.3-postgis-2.1 puppet-agent
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y install puppet-agent
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install puppet
 
 # Add image configuration and scripts
 
